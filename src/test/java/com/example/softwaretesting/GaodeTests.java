@@ -20,6 +20,7 @@ public class GaodeTests {
         // 测试nuaa.edu.cn的IP地址218.94.136.180
         String url1 = "https://restapi.amap.com/v3/ip?key=8740dd420bb02a3921d506032f906ca6&ip=218.94.136.180";
 
+
         IpInfo ipInfo1 = restTemplate.getForObject(url1, IpInfo.class);
         Assertions.assertNotNull(ipInfo1);
         Assertions.assertEquals("1",ipInfo1.getStatus());
